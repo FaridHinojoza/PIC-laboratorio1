@@ -4,8 +4,6 @@ const tarjetaProductoTemplate = `
             <slot name="foto">
                 <div class="foto-respaldo">☕</div>
             </slot>
-
-            <span class="badge-destacado">⭐ Destacado</span>
         </div>
 
         <div class="detalles">
@@ -46,16 +44,6 @@ const tarjetaProductoStyles = `
         box-shadow: 0 12px 32px rgba(0,0,0,0.18);
     }
 
-    :host([destacado]) {
-        border: 3px solid gold;
-        box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.25),
-                    0 8px 28px rgba(0,0,0,0.15);
-    }
-
-    :host([destacado]) .badge-destacado {
-        display: flex;
-    }
-
     .caja-foto {
         position: relative;
         width: 100%;
@@ -81,23 +69,6 @@ const tarjetaProductoStyles = `
     .foto-respaldo {
         font-size: 5rem;
         opacity: 0.5;
-    }
-
-    .badge-destacado {
-        display: none;
-        position: absolute;
-        top: 12px;
-        right: 12px;
-        background: gold;
-        color: #3a2a00;
-        font-size: 0.72rem;
-        font-weight: 700;
-        padding: 4px 10px;
-        border-radius: 20px;
-        align-items: center;
-        gap: 4px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
     }
 
     .detalles {

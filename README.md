@@ -98,29 +98,6 @@
 
 ---
 
-## Reto extra
-
-Se implementó el atributo `destacado`.  
-Cuando la tarjeta incluye `destacado` como atributo booleano:
-
-```html
-<tarjeta-producto precio="18000" destacado>…</tarjeta-producto>
-```
-
-El selector `:host([destacado])` activa un borde dorado y muestra un badge "⭐ Destacado":
-
-```css
-:host([destacado]) {
-    border: 3px solid gold;
-    box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.25), …;
-}
-:host([destacado]) .badge-destacado {
-    display: flex;
-}
-```
-
----
-
 ## Declaración de uso de IA
 
 Este proyecto fue desarrollado con la asistencia de **Antigravity (Google DeepMind)** para generar la estructura base de los archivos, las imágenes de producto y el README. Todo el código fue revisado y validado por el equipo, y refleja los patrones aprendidos en clase (Custom Elements, Shadow DOM, slots, `observedAttributes`, `:host` y variables CSS).
