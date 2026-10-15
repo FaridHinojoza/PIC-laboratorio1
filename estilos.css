@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+    --color-marca: #6f4e37;
+    --color-fondo: #faf7f4;
+    --color-texto: #2c1a0e;
+    --color-acento: #c68642;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background: var(--color-marca);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: -40px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+}
+
+header .logo {
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.75;
+    margin-bottom: 6px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+header p.subtitulo {
+    margin-top: 8px;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+main {
+    width: 100%;
+    max-width: 1100px;
+    padding: 60px 20px;
+}
+
+main h2.seccion-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-marca);
+    margin-bottom: 36px;
+    text-align: center;
+    position: relative;
+}
+
+main h2.seccion-titulo::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--color-acento);
+    border-radius: 4px;
+    margin: 10px auto 0;
+}
+
+.grilla-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+tarjeta-producto {
+    --color-marca: var(--color-marca);
+}
+
+footer {
+    width: 100%;
+    background: var(--color-marca);
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.82rem;
+    margin-top: auto;
+}

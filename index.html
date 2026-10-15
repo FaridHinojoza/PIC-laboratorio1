@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Raíz — Tostado Artesanal</title>
+    <meta name="description"
+        content="Café Raíz: café tostado artesanalmente con granos de origen único. Descubre nuestro Café Negro, Latte Artesanal y Cold Brew.">
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <p class="logo">Emprendimiento</p>
+        <h1>Café Raíz</h1>
+        <p class="subtitulo">Granos de origen único · Tostado artesanal · Con amor desde Colombia</p>
+    </header>
+
+    <main>
+        <h2 class="seccion-titulo">Nuestros Productos</h2>
+
+        <div class="grilla-productos">
+
+            <tarjeta-producto id="tarjeta-cafe" precio="18" destacado></tarjeta-producto>
+
+            <tarjeta-producto id="tarjeta-latte" precio="12">
+                <img slot="foto" src="./img/latte-artesanal.jpg"
+                    alt="Taza de Latte Artesanal con arte en espuma de Café Raíz">
+                <h3 slot="nombre">Latte Artesanal</h3>
+                <p>Espresso doble con leche vaporizada a baja temperatura.
+                    Arte latte incluido. Sirve caliente o sobre hielo.</p>
+            </tarjeta-producto>
+
+            <tarjeta-producto id="tarjeta-coldbrew" precio="10">
+                <img slot="foto" src="./img/cold-brew.jpg"
+                    alt="Botella de 355 ml de Cold Brew Artesanal de Café Raíz">
+                <h3 slot="nombre">Cold Brew Artesanal</h3>
+                <p>Infusión en frío durante 18 horas. Suave, concentrado
+                    y sin acidez. Botella de 355 ml lista para llevar.</p>
+            </tarjeta-producto>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Café Raíz</p>
+    </footer>
+
+    <script type="module" src="./components/tarjeta-producto.js"></script>
+
+</body>
+
+</html>
