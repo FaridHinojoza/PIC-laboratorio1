@@ -1,7 +1,3 @@
-# README · Café Raíz — Actividad 8 · PIC 2026
-
----
-
 ## Propuesta del emprendimiento
 
 | Campo | Descripción |
@@ -14,10 +10,12 @@
 
 ## Integrantes del equipo
 
-| Nombre | Rol en esta entrega |
-|---|---|
-| _(completa con tu nombre)_ | Desarrollador principal |
-| _(completa con tu nombre)_ | Diseño y README |
+| Integrante | Rol asignado | Responsabilidades principales |
+|---|---|---|
+| **Denilson Celi** | Líder de equipo | Coordinación general del proyecto, revisión de arquitectura de software y aseguramiento de calidad técnica. |
+| **Farid Hinojoza** | Desarrollador | Implementación de la lógica del componente web, definición del Shadow DOM y gestión de atributos observados. |
+| **Andres Pozo** | Desarrollador | Diseño de la hoja de estilos encapsulada (`:host`), maquetación de la grilla de productos e integración en `index.html`. |
+| **Fernando Camaton** | Desarrollador | Pruebas de compatibilidad, validación de contenido de respaldo en slots y redacción de la documentación técnica. |
 
 ---
 
@@ -98,9 +96,9 @@
 
 ## Registro PASO 5 — Repositorio del equipo
 
-- **Enlace al repositorio:** _(pega aquí el enlace de GitHub una vez que lo subas)_
-- **¿Qué hizo cada integrante?**
-  - _(completa aquí)_
+- **Enlace al repositorio:** https://github.com/FaridHinojoza/PIC-laboratorio1
+<!--- **¿Qué hizo cada integrante?**
+  - _(completa aquí)_-->
 
 ---
 
